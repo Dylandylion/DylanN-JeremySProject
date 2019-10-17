@@ -1,0 +1,2 @@
+class Airbnb < ApplicationRecord
+end

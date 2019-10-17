@@ -9,9 +9,14 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="search.css">
     <title>RoomSpot</title>
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+  <a class="navbar-brand" href="#">RoomSpot</a>
+</nav> 
   </head>
   
   <body>
+   
+    
     <div class="container-fluid" style="height: 1000px">
   
   <div class="row h-100">
@@ -20,12 +25,26 @@
     </div>
     <div class="col-8 themed-grid-col">
       
-      
+      <% @airbnbs.each do |airbnb| %>
       <div class="row">
-        <div class="col-3 themed-grid-col" style="height: 170px"><img src= images[rand(4)] class="w-100"></img></div> <div class="col-9 themed-grid-col" style="height: 170px"> Put text here</div>
-          
+        <div class="col-3 themed-grid-col" style="height: 170px"><img src="<%= airbnb.image_url %>" class="w-100"></div> <div class="col-9 themed-grid-col" style="height: 170px"> 
+          <div class="row">
+            <div class="col-10">
+              <%= airbnb.room_type %> -
+              <%= airbnb.ammenities %><br>
+              Guest Amount <%= airbnb.guest_amount %><br>
+              Beds <%= airbnb.number_of_beds %><br>
+              Bedroom <%= airbnb.number_of_bedrooms %><br>
+              Bathroom <%= airbnb.restroom_count %>
+            </div>
+              <!--<%= airbnb.pets %>-->
+            <div class="col-2">
+              Price <%= airbnb.price %>
+            </div>
+          </div>
+        </div>
       </div>
-      
+      <% end %>
     </div>
     <div class="col-2 themed-grid-col">
       Column Right
