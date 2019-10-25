@@ -10,24 +10,195 @@
     <link rel="stylesheet" href="search.css">
     <title>RoomSpot</title>
     <nav class="navbar navbar-dark bg-dark fixed-top">
-  <a class="navbar-brand" href="#">RoomSpot</a>
+  <a class="navbar-brand" href="home">RoomSpot</a>
+  <%= link_to 'Click this to go to front end testing', search_path %>
 </nav> 
   </head>
   
   <body>
    
     
-    <div class="container-fluid" style="height: 1000px">
+    <div class="container-fluid">
+    
+  <div class="row" style="height: 55px">
+    This is here to vertically offset for stick navbar.
+  </div>
   
-  <div class="row h-100">
+  <div class="row" >
     <div class="col-2 themed-grid-col">
-      Column Left
+      <form>
+        <div class="form-group">
+          <label for="Search">Search</label>
+          <input type="location" class="form-control" id="exampleCity1" aria-describedby="emailHelp" placeholder="Enter City">
+          <input type="location" class="form-control" id="exampleState1" aria-describedby="emailHelp" placeholder="Enter State">
+          <input type="location" class="form-control" id="exampleZipCode1" aria-describedby="emailHelp" placeholder="Enter Zip Code">
+      
+          <small id="locationHelp" class="form-text text-muted">Where are you looking to book a place</small>
+        </div>
+      <div class="row">
+        <div class="col">
+        <p>
+          <a class="btn btn-dark" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Advanced Search</a>
+        </p>
+          <div class="row">
+            <div class="col">
+              <div class="collapse multi-collapse" id="multiCollapseExample1">
+                <div class="card card-body" style="background-color: transparent; border: none;">
+                  
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Room Type
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right">
+                      <button class="dropdown-item" type="button">Private Room in Appartment</button>
+                      <button class="dropdown-item" type="button">Private Room in House</button>
+                      <button class="dropdown-item" type="button">Entire Appartment</button>
+                      <button class="dropdown-item" type="button">Entire Condominium</button>
+                      <button class="dropdown-item" type="button">Guest House</button>
+                      <button class="dropdown-item" type="button">Room in Hostel</button>
+                      <button class="dropdown-item" type="button">Shared Room in Hostel</button>
+                    </div>
+                  </div>
+                  
+                  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    Amenities
+                  </button>
+                  <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+                      
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">Wifi</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                        <label class="form-check-label" for="inlineCheckbox2">Pools</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                        <label class="form-check-label" for="inlineCheckbox3">Parking</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
+                        <label class="form-check-label" for="inlineCheckbox3">Air Conditioning</label>
+                      </div>
+                    </div>
+                  </div>
+                
+                  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
+                    Guest amount
+                  </button>
+                  <div class="collapse" id="collapseExample1">
+                    <div class="card card-body">
+                      
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">1</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                        <label class="form-check-label" for="inlineCheckbox2">2</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                        <label class="form-check-label" for="inlineCheckbox3">3</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
+                        <label class="form-check-label" for="inlineCheckbox3">4</label>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+                    Number of Beds
+                  </button>
+                  <div class="collapse" id="collapseExample2">
+                    <div class="card card-body">
+                      
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">1</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                        <label class="form-check-label" for="inlineCheckbox2">2</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                        <label class="form-check-label" for="inlineCheckbox3">3</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
+                        <label class="form-check-label" for="inlineCheckbox3">4</label>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
+                    Number of Bedrooms
+                  </button>
+                  <div class="collapse" id="collapseExample3">
+                    <div class="card card-body">
+                      
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">1</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                        <label class="form-check-label" for="inlineCheckbox2">2</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                        <label class="form-check-label" for="inlineCheckbox3">3</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
+                        <label class="form-check-label" for="inlineCheckbox3">4</label>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample4">
+                    Restroom Count
+                  </button>
+                  <div class="collapse" id="collapseExample4">
+                    <div class="card card-body">
+                      
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">1</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                        <label class="form-check-label" for="inlineCheckbox2">2</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                        <label class="form-check-label" for="inlineCheckbox3">3</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
+                        <label class="form-check-label" for="inlineCheckbox3">4</label>
+                      </div>
+                    </div>
+                  </div>
+                    
+                </div>
+              </div>
+            </div>
+          </div>
+        <button type="submit" class="btn btn-success w-100">Submit</button>
+        </div></div>
+      </form>
     </div>
+    
     <div class="col-8 themed-grid-col">
       
       <% @airbnbs.each do |airbnb| %>
       <div class="row">
-        <div class="col-3 themed-grid-col" style="height: 170px"><img src="<%= airbnb.image_url %>" class="w-100"></div> <div class="col-9 themed-grid-col" style="height: 170px"> 
+        <div class="col-3 themed-grid-col" style="height: 170px"><img src="<%= airbnb.image_url %>" class="w-100" style="height: 150px"></div> <div class="col-9 themed-grid-col" style="height: 170px"> 
           <div class="row">
             <div class="col-10">
               <%= airbnb.room_type %> -
