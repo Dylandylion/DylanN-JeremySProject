@@ -1,6 +1,16 @@
 <nav class="navbar navbar-dark bg-primary fixed-top">
   <a class="navbar-brand" href="home">RoomSpot</a>
   <a class="navbar-brand" href="airbnbs">Search</a>
-  <a class="navbar-brand" href="testing">Testing</a>
+  <!--<a class="navbar-brand" href="testing">Testing</a>-->
+  
+  <% if user_signed_in? %>
+    
+    <%= link_to('Logout', destroy_user_session_path, method: :delete, id:"logout", class: "navbar-brand") %>        
+    
+    <% else %>
+    
+    <%= link_to('Login', new_user_session_path,id:"logout", class: "navbar-brand") %>  
+    
+  <% end %>
   
 </nav>

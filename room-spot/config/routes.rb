@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
+  devise_for :users, controllers: { sessions: 'users/sessions' }
+  
   resources :airbnbs
-  get "home" , to: "search#index"
   root "search#index"
+  get "home" , to: "search#index"
   get "testing", to:"search#testing"
     
 

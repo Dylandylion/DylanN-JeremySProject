@@ -10,17 +10,35 @@
 }
 
 .picture {
-  
   background-image: url('canada.jpg');
-
   background-size: cover;
-  height: 600px;
+  
 }
 
 .picture2 {
-  
   background-image: url('house.png');
-
   background-size: contain;
+}
+
+.picture3 {
+  background-image: url('damvistacopy.jpg');
+  background-size: cover;
+}
+
+a:hover {
+  background-color: DodgerBlue ;
+ 
+}
+
+.navbar-brand{
+  padding-left: 10px;
+  padding-right: 10px;
   
 }
+
+.solid {
+  border-style: solid;
+  
+  padding: 45px;
+}
+  
