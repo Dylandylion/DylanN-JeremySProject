@@ -1,6 +1,8 @@
-<nav class="navbar navbar-dark bg-primary fixed-top">
-  <a class="navbar-brand" href="home">RoomSpot</a>
-  <a class="navbar-brand" href="airbnbs">Search</a>
+<nav class="navbar navbar-dark bg-primary fixed-top" style="height:8vh;">
+  
+  <%= link_to "RoomSpot", root_path, class:"navbar-brand" %>
+  <%= link_to "Search", airbnbs_path, class:"navbar-brand" %>
+  
   <!--<a class="navbar-brand" href="testing">Testing</a>-->
   
   <% if user_signed_in? %>

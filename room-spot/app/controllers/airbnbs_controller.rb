@@ -1,5 +1,6 @@
 class AirbnbsController < ApplicationController
   before_action :set_airbnb, only: [:show, :edit, :update, :destroy]
+  
 
   # GET /airbnbs
   # GET /airbnbs.json
