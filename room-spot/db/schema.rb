@@ -10,20 +10,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20191031181814) do
+ActiveRecord::Schema.define(version: 20191107055648) do
 
   create_table "airbnbs", force: :cascade do |t|
     t.string   "image_url"
+    t.string   "title"
     t.string   "room_type"
-    t.string   "ammenities"
     t.integer  "guest_amount"
     t.integer  "number_of_beds"
-    t.integer  "number_of_bedrooms"
     t.integer  "restroom_count"
+    t.text     "description"
+    t.string   "link"
+    t.string   "coordinates"
+    t.text     "ammenities"
     t.integer  "price"
-    t.string   "pets"
-    t.datetime "created_at",         null: false
-    t.datetime "updated_at",         null: false
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+  end
+
+  create_table "statics", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "users", force: :cascade do |t|

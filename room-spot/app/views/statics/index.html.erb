@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Statics</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @statics.each do |static| %>
+      <tr>
+        <td><%= link_to 'Show', static %></td>
+        <td><%= link_to 'Edit', edit_static_path(static) %></td>
+        <td><%= link_to 'Destroy', static, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Static', new_static_path %>

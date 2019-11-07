@@ -1,6 +1,10 @@
 <html lang="en">
   <head>
-    
+    <style>
+      h5:hover{
+        
+      }
+    </style>
     
   </head>
   
@@ -183,17 +187,22 @@
       
       <% @airbnbs.each do |airbnb| %>
       <div class="row">
-        <div class="col-3 themed-grid-col" style="height: 170px"><img src="<%= airbnb.image_url %>" class="w-100" style="height: 150px"></div> <div class="col-9 themed-grid-col" style="height: 170px"> 
+        <div class="col-4 themed-grid-col" style="height: 270px"><img src="<%= airbnb.image_url %>" class="w-100" style="height: 250px"></div> <div class="col-8 themed-grid-col" style="height: 270px"> 
           <div class="row">
             <div class="col-10">
+             <h5><%= link_to airbnb.title, airbnb.link %></h5>
               <%= airbnb.room_type %> -
+              Guest Amount <%= airbnb.guest_amount %> -
+              Beds <%= airbnb.number_of_beds %> -
+              Bathroom <%= airbnb.restroom_count %><br>
+              <h5>Amenities</h5>
               <%= airbnb.ammenities %><br>
-              Guest Amount <%= airbnb.guest_amount %><br>
-              Beds <%= airbnb.number_of_beds %><br>
-              Bedroom <%= airbnb.number_of_bedrooms %><br>
-              Bathroom <%= airbnb.restroom_count %>
+              <%= airbnb.coordinates %><br>
+              <h5>Description</h5>
+              
+              <%= airbnb.description %>
             </div>
-              <!--<%= airbnb.pets %>-->
+             
             <div class="col-2">
               Price <%= airbnb.price %>
             </div>
