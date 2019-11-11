@@ -88,7 +88,7 @@ It has everything youll need for a comfortable stay. Cook a meal in the fully eq
 
 This is 2 story townhouse in well-maintained community.
 
-There are queen size beds in two individual rooms and bathrooms on upstairs. Both individual rooms has 2-3 walk-in closets. A stand up, walk-in shower in the master bathroom and a bathtub in the guest bath. Both bathrooms have shampoo/conditioner/body soap and clean bath/hand/wash towels will be provided.',link:'https://www.vrbo.com/1805186?arrival=2019-12-06&departure=2019-12-09' ,coordinates:'29.674852, -95.292070' ,ammenities:'nternet
+There are queen size beds in two individual rooms and bathrooms on upstairs. Both individual rooms has 2-3 walk-in closets. A stand up, walk-in shower in the master bathroom and a bathtub in the guest bath. Both bathrooms have shampoo/conditioner/body soap and clean bath/hand/wash towels will be provided.',link:'https://www.vrbo.com/1805186?arrival=2019-12-06&departure=2019-12-09' ,coordinates:'29.674852, -95.292070' ,ammenities:'Internet
 Air Conditioning
 TV
 Satellite or Cable
@@ -380,7 +380,7 @@ Air Conditioning
 TV
 Satellite or Cable
 No Smoking' ,price:95,).save
-Airbnb.create(image_url:'https://odis.homeaway.com/odis/listing/9b98c01a-eb6d-4621-bb44-e51a50dab3ca.f10.webp' , title:'1st Flr Apt in Native Woods, Next to Bayou Trails, Washington St / Heights Area' , room_type:'Apartment' ,guest_amount:4 ,number_of_beds:1 ,restroom_count:1 ,description:'reat yourself in this luxury 1st floor apartment in a new architectural modern home, close to everything in the trendy Washington St / Heights area. Located in a pristine patch of old growth woods, it is your own private retreat.
+Airbnb.create(image_url:'https://odis.homeaway.com/odis/listing/9b98c01a-eb6d-4621-bb44-e51a50dab3ca.f10.webp' , title:'1st Flr Apt in Native Woods, Next to Bayou Trails, Washington St / Heights Area' , room_type:'Apartment' ,guest_amount:4 ,number_of_beds:1 ,restroom_count:1 ,description:'Treat yourself in this luxury 1st floor apartment in a new architectural modern home, close to everything in the trendy Washington St / Heights area. Located in a pristine patch of old growth woods, it is your own private retreat.
 
 Private entrance. Free parking. Glass wall and private deck overlook woodlands and bayou. Bedroom with queen bed and walk-in closet. Queen sofa bed in living room. Full kitchen including dishwasher, gas stove/oven, refrigerator, microwave and pantry, and it is stocked with essentials. 42” TV with cable, movie channels and Netflix. Wi-fi and cabled high speed internet. Whirlpool soaking tub. Access to huge roof deck available from spiral stair tower with fire pit and grill. Bikes and tennis equipment available to borrow. Washer and dryer in garage.
 
@@ -422,7 +422,7 @@ Children Welcome
 Internet
 Parking
 Swimming pool' ,price:94,).save
-Airbnb.create(image_url:'https://odis.homeaway.com/odis/listing/c6460edf-7c1b-43b9-aa88-3e8d05a037c9.f10.webp' , title:'DOWNTOWN LUXURY GATED 2250 SQ FT PATIO ....CLOSE TO EVERYTHING..' , room_type:'Townhome' ,guest_amount:3 ,number_of_beds:3 ,restroom_count:1 ,description:'TUNNING is the best descriptor for this find.
+Airbnb.create(image_url:'https://odis.homeaway.com/odis/listing/c6460edf-7c1b-43b9-aa88-3e8d05a037c9.f10.webp' , title:'DOWNTOWN LUXURY GATED 2250 SQ FT PATIO ....CLOSE TO EVERYTHING..' , room_type:'Townhome' ,guest_amount:3 ,number_of_beds:3 ,restroom_count:1 ,description:'STUNNING is the best descriptor for this find.
 
 3 bedroom townhouse in a secluded gated enclave is ready for your next HOME AWAY FROM HOME.
 
@@ -442,7 +442,7 @@ Walk 2 blocks to Mcgowan st station ... catch train or Uber to medical center, t
 
 Relax with your favorite beverage and enjoy an incredible view of the Houston skyline lit in all its glory.
 
-In summary this property features floor-to-ceiling windows, two private balconies, and ultra-modern interior styling for your comfort and enjoyment.',link:'https://www.vrbo.com/1062023?arrival=2019-12-06&departure=2019-12-09' ,coordinates:'29.742562, -95.373664' ,ammenities:'ternet
+In summary this property features floor-to-ceiling windows, two private balconies, and ultra-modern interior styling for your comfort and enjoyment.',link:'https://www.vrbo.com/1062023?arrival=2019-12-06&departure=2019-12-09' ,coordinates:'29.742562, -95.373664' ,ammenities:'Internet
 Air Conditioning
 TV
 Satellite or Cable
@@ -508,6 +508,3 @@ TV
 Children Welcome
 Internet
 Parking' ,price:91,).save
-
-
-
