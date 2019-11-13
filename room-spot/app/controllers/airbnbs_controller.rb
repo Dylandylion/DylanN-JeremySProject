@@ -5,9 +5,14 @@ class AirbnbsController < ApplicationController
   # GET /airbnbs
   # GET /airbnbs.json
   def index
-    @airbnbs = Airbnb.all
+    # search = params[:term].present? ? params[:term].present? : nil
+    
+    # @airbnbs = if search
+    #    Airbnb.search(search)
+    # else
+      Airbnb.all
+    # end
   end
-
   # GET /airbnbs/1
   # GET /airbnbs/1.json
   def show
