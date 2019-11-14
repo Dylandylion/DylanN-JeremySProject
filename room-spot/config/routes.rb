@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   resources :statics
+   root "search#index"
   devise_for :users, controllers: { sessions: 'users/sessions', registrations: 'users/registrations', passwords: 'users/passwords'}
   
   resources :airbnbs
