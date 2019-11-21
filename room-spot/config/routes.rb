@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   root "search#index"
   get "home" , to: "search#index"
   get "testing", to:"search#testing"
+  get "about", to:"search#about"
     
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
