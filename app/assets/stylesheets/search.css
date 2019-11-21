@@ -16,18 +16,18 @@
 }
 
 .picture {
-  background-image: url('canada.jpg');
+  background: image-url('canada.jpg');
   background-size: cover;
   
 }
 
 .picture2 {
-  background-image: url('house.png');
+  background: image-url('house.png');
   background-size: contain;
 }
 
 .picture3 {
-  background-image: url('damvistacopy.jpg');
+  background: image-url('damvistacopy.jpg');
   background-size: cover;
 }
 
