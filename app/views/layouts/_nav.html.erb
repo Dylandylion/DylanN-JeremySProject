@@ -2,19 +2,19 @@
   <div class="container-fluid">
     <div class="row">
       
-      <div class="col-1">
+      <div class="col">
         <%= link_to "RoomSpot", root_path, class:"navbar-brand" %>
       </div>
-      <div class="col-1">
+      <div class="col">
         <%= link_to "Search", airbnbs_path, class:"navbar-brand" %>
       </div>
-      <div class="col-1">
+      <div class="col">
         <%= link_to "About", statics_path, class:"navbar-brand" %>
       </div>
-      <div class="col-3">
+      <div class="col">
         
       </div>
-      <div class="col-1">
+      <div class="col">
       <% if user_signed_in? %>
     
       <%= link_to('Logout', destroy_user_session_path, method: :delete, id:"logout", class: "navbar-brand") %>        
