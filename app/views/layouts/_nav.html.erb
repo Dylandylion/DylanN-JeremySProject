@@ -1,18 +1,20 @@
 <nav class="navbar navbar-dark bg-primary fixed-top" style="height:8vh;">
   <div class="container">
     <div class="row">
-      <div class="col">
-        <%= link_to "RoomSpot", root_path, class:"navbar-brand" %>
+      
+      <div class="col-1">
+        <h3><%= link_to "RoomSpot", root_path, class:"navbar-brand" %></h3>
       </div>
-      <div class="col">
+      <div class="col-1">
         <%= link_to "Search", airbnbs_path, class:"navbar-brand" %>
       </div>
-      <div class="col">
+      <div class="col-1">
         <%= link_to "About", statics_path, class:"navbar-brand" %>
       </div>
-      <div class="col">
+      <div class="col-8">
         
       </div>
+      <div class="col-1">
       <% if user_signed_in? %>
     
       <%= link_to('Logout', destroy_user_session_path, method: :delete, id:"logout", class: "navbar-brand") %>        
@@ -24,6 +26,6 @@
       <% end %>
     </div>
   </div>
-  
+  </div>
   
 </nav>
