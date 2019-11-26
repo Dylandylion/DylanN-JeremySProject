@@ -1,18 +1,29 @@
 <nav class="navbar navbar-dark bg-primary fixed-top" style="height:8vh;">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <%= link_to "RoomSpot", root_path, class:"navbar-brand" %>
+      </div>
+      <div class="col">
+        <%= link_to "Search", airbnbs_path, class:"navbar-brand" %>
+      </div>
+      <div class="col">
+        <%= link_to "About", statics_path, class:"navbar-brand" %>
+      </div>
+      <div class="col">
+        
+      </div>
+      <% if user_signed_in? %>
+    
+      <%= link_to('Logout', destroy_user_session_path, method: :delete, id:"logout", class: "navbar-brand") %>        
+      
+      <% else %>
+      
+      <%= link_to('Login', new_user_session_path,id:"logout", class: "navbar-brand") %>  
+      
+      <% end %>
+    </div>
+  </div>
   
-  <%= link_to "RoomSpot", root_path, class:"navbar-brand" %>
-  <%= link_to "Search", airbnbs_path, class:"navbar-brand" %>
-  
-  <!--<a class="navbar-brand" href="testing">Testing</a>-->
-  
-  <% if user_signed_in? %>
-    
-    <%= link_to('Logout', destroy_user_session_path, method: :delete, id:"logout", class: "navbar-brand") %>        
-    
-    <% else %>
-    
-    <%= link_to('Login', new_user_session_path,id:"logout", class: "navbar-brand") %>  
-    
-  <% end %>
   
 </nav>
