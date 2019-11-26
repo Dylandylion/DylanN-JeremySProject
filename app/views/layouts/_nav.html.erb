@@ -1,5 +1,5 @@
 <nav class="navbar navbar-dark bg-primary fixed-top" style="height:8vh;">
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
       
       <div class="col-1">
@@ -11,7 +11,7 @@
       <div class="col-1">
         <%= link_to "About", statics_path, class:"navbar-brand" %>
       </div>
-      <div class="col-8">
+      <div class="col-3">
         
       </div>
       <div class="col-1">
@@ -24,8 +24,8 @@
       <%= link_to('Login', new_user_session_path,id:"logout", class: "navbar-brand") %>  
       
       <% end %>
+      </div>
     </div>
-  </div>
   </div>
   
 </nav>
