@@ -335,11 +335,11 @@
 <div class="container-fluid">
   <div class="row" >
 
-    <div class="col-9 themed-grid-col" style="padding: 0px;">
+    <div class="col-9 themed-grid-col" style="padding: 5px;">
       
       <% @airbnbs.each do |airbnb| %>
       <div class="row">
-        <div class="col-4 themed-grid-col" style="height: 270px; padding: 5px;"><img src="<%= airbnb.image_url %>" class="w-100 h-100" style="height: 250px;"></div> <div class="col-8 themed-grid-col" style="height: 270px"> 
+        <div class="col-4 themed-grid-col" style="height: 270px; padding: 3px;"><img src="<%= airbnb.image_url %>" class="w-100 h-100" style="height: 250px;"></div> <div class="col-8 themed-grid-col" style="height: 270px"> 
           <div class="row">
             <div class="col-10">
              <h5><%= link_to airbnb.title, airbnb.link %></h5>
@@ -364,7 +364,7 @@
       <% end %>
     </div>
     <div class="col-3 themed-grid-col2">
-      <img src="https://compote.slate.com/images/ff47615b-f476-4479-af98-add0a5255c80.jpeg" class="w-100" >
+      <img src="https://compote.slate.com/images/ff47615b-f476-4479-af98-add0a5255c80.jpeg" class="w-100" style="border: 1px solid rgba(86, 61, 124, .2);" >
     </div>
   </div>
 </div>
